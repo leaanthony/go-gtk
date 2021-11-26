@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mattn/go-gtk/gdkpixbuf"
-	"github.com/mattn/go-gtk/gtk"
+	"github.com/leaanthony/go-gtk/gdkpixbuf"
+	"github.com/leaanthony/go-gtk/gtk"
 )
 
 func main() {
@@ -26,7 +26,7 @@ func main() {
 	pbd.Width, pbd.Height, pbd.RowStride, pbd.HasAlpha = pb.GetWidth(), pb.GetHeight(), pb.GetRowstride(), pb.GetHasAlpha()
 	pbd.Colorspace, pbd.BitsPerSample = pb.GetColorspace(), pb.GetBitsPerSample()
 
-	fmt.Printf("package main \n\nimport \"github.com/mattn/go-gtk/gdkpixbuf\"\n\nvar (\n")
+	fmt.Printf("package main \n\nimport \"github.com/leaanthony/go-gtk/gdkpixbuf\"\n\nvar (\n")
 	fmt.Printf("\t%s = %#v\n", os.Args[1], pbd)
 
 	fmt.Println(")\n")

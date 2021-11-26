@@ -2,11 +2,11 @@ package gtk_test
 
 import (
 	"io/ioutil"
-	"testing"
 	"os"
 	"runtime"
+	"testing"
 
-	"github.com/mattn/go-gtk/gtk"
+	"github.com/leaanthony/go-gtk/gtk"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -66,7 +66,7 @@ func TestFILE_CHOOSER(t *testing.T) {
 
 	assert.True(t, d.SelectUri("file://"+f1.Name()))
 	gtkRun()
-	d.UnselectUri("file://"+f1.Name())
+	d.UnselectUri("file://" + f1.Name())
 
 	d.UnselectAll()
 	gtkRun()
@@ -88,7 +88,6 @@ func TestFileChooser_SetCurrentName(t *testing.T) {
 	d.SetCurrentName("foobar")
 	// no way to check this until GTK+ 3.10
 }
-
 
 func TestMisc_GetPadding(t *testing.T) {
 	gtk.Init(nil)

@@ -1,3 +1,4 @@
+//go:build !cgocheck
 // +build !cgocheck
 
 package gdkpixbuf
@@ -10,8 +11,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/mattn/go-gtk/gio"
-	"github.com/mattn/go-gtk/glib"
+	"github.com/leaanthony/go-gtk/gio"
+	"github.com/leaanthony/go-gtk/glib"
 )
 
 // PixbufData is an inline/embedded image data object for usage with NewPixbufFromData.

@@ -1,11 +1,12 @@
-// +build with-x11
+//go:build ignore
+// +build ignore
 
 package gtk
 
 import (
 	"unsafe"
 
-	"github.com/mattn/go-gtk/gdk"
+	"github.com/leaanthony/go-gtk/gdk"
 )
 
 func (v *Window) XID() int32 {

@@ -1,3 +1,4 @@
+//go:build !cgocheck
 // +build !cgocheck
 
 package gtkspell
@@ -14,8 +15,8 @@ static inline gchar* to_gcharptr(const char* s) { return (gchar*)s; }
 import "C"
 import "unsafe"
 
-import "github.com/mattn/go-gtk/glib"
-import "github.com/mattn/go-gtk/gtk"
+import "github.com/leaanthony/go-gtk/glib"
+import "github.com/leaanthony/go-gtk/gtk"
 
 //-----------------------------------------------------------------------
 // GtkSpell

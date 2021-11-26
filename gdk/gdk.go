@@ -1,3 +1,4 @@
+//go:build !cgocheck
 // +build !cgocheck
 
 package gdk
@@ -8,8 +9,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/mattn/go-gtk/gdkpixbuf"
-	"github.com/mattn/go-gtk/pango"
+	"github.com/leaanthony/go-gtk/gdkpixbuf"
+	"github.com/leaanthony/go-gtk/pango"
 )
 
 func guint16(v uint16) C.guint16 { return C.guint16(v) }

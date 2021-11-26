@@ -1,3 +1,4 @@
+//go:build !cgocheck
 // +build !cgocheck
 
 /*
@@ -16,11 +17,11 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/mattn/go-gtk/gdk"
-	"github.com/mattn/go-gtk/gdkpixbuf"
-	"github.com/mattn/go-gtk/gio"
-	"github.com/mattn/go-gtk/glib"
-	"github.com/mattn/go-gtk/pango"
+	"github.com/leaanthony/go-gtk/gdk"
+	"github.com/leaanthony/go-gtk/gdkpixbuf"
+	"github.com/leaanthony/go-gtk/gio"
+	"github.com/leaanthony/go-gtk/glib"
+	"github.com/leaanthony/go-gtk/pango"
 	"github.com/mattn/go-pointer"
 )
 

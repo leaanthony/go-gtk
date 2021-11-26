@@ -15,8 +15,8 @@ import (
 	"sync"
 
 	"github.com/garyburd/go-oauth/oauth"
-	"github.com/mattn/go-gtk/gdkpixbuf"
-	"github.com/mattn/go-gtk/gtk"
+	"github.com/leaanthony/go-gtk/gdkpixbuf"
+	"github.com/leaanthony/go-gtk/gtk"
 )
 
 var (

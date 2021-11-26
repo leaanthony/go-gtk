@@ -1,3 +1,4 @@
+//go:build !cgocheck
 // +build !cgocheck
 
 package gtksourceview
@@ -8,7 +9,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/mattn/go-gtk/gtk"
+	"github.com/leaanthony/go-gtk/gtk"
 )
 
 func gstring(s *C.char) *C.gchar { return C.toGstr(s) }
