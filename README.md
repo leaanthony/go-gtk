@@ -1,3 +1,8 @@
+
+**This repository is a fork of https://github.com/mattn/go-gtk with the sole purpose of being used by [Wails](https://github.com/wailsapp/wails). It is not supported as a standalone library**
+
+----
+
 # go-gtk
 
 [![Build Status](https://travis-ci.org/mattn/go-gtk.png?branch=master)](https://travis-ci.org/mattn/go-gtk)
